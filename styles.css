@@ -1,0 +1,121 @@
+/* Reset default margin and padding */
+body, h1 {
+    margin: 0;
+    padding: 0;
+}
+
+/* Page styling */
+body {
+    background-color: #f7f7f7;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+}
+
+h1 {
+    font-weight: 600;
+    font-size: 24px;
+}
+
+.profile {
+    max-width: 500px;
+    width: 90%;
+    margin: 0 auto;
+    padding: 20px;
+    border-radius: 8px;
+   background:linear-gradient(violet ,blue,violet);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.profile-picture {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.profile-picture img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    cursor: pointer;
+    border: 4px solid #fff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+#avatar-label {
+    display: block;
+    background-color: #007bff;
+    color: #fff;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.name, textarea {
+    width: 90%;
+    border: none;
+    font-size: 16px;
+    font-weight: 400;
+    border-radius: 6px;
+    padding: 12px;
+    margin: 10px 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+button {
+    background-color: #007bff;
+    color: #fff;
+    font-size: 16px;
+    border: none;
+    border-radius: 8px;
+    padding: 12px;
+    cursor: pointer;
+    width: 48%;
+    margin: 10px 1%;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+@media (max-width: 768px) {
+    .profile-picture img {
+        width: 120px;
+        height: 120px;
+    }
+
+    .name, textarea, button {
+        margin: 5px 0;
+    }
+}
+
+@media (max-width: 480px) {
+    .profile {
+        padding: 10px;
+    }
+
+    .profile-picture img {
+        width: 100px;
+        height: 100px;
+    }
+}
+body {
+    transition: background-color 1s;
+  }
+ /* Define CSS styles for different themes */
+ .day-theme {
+    background-color: #f4f4f4;
+    color: #333;
+  }
+
+  .night-theme {
+    background-color: #333;
+    color: #f4f4f4;
+  }
